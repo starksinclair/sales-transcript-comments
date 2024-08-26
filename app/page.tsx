@@ -27,6 +27,10 @@ const App = () => {
   const [comments, setComments] = useState<Comment[]>([]);
   useEffect(() => {
     // const fetchComments = async () => {
+    if (typeof window !== "undefined") {
+      // Access window object here
+      console.log(window.innerWidth);
+    }
     const commentsCollection = collection(db, "comments");
     const unsubscribe = onSnapshot(
       commentsCollection,
