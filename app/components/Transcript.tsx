@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { Button, Modal, TextField, Box, IconButton } from "@mui/material";
 import { AiOutlineRobot } from "react-icons/ai";
